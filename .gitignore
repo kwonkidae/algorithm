@@ -3,4 +3,5 @@
 !*.py
 !*.h
 !*.c
+!*.java
 !AdvancedList
