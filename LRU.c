@@ -145,9 +145,17 @@ void ReferencePage(Queue* queue, Hash* hash, unsigned pageNumber)
   }
 }
 
+void display(Queue* queue) {
+  QNode* temp = queue->front;
+  while(temp) {
+    printf("%d ", temp->pageNumber);
+    temp = temp->next;
+  }
+}
+
 
 int main() {
-  Queue* q = createQueue(4);
+  Queue* q = createQueue(6);
 
   Hash* hash = createHash(10);
 
@@ -157,10 +165,15 @@ int main() {
   ReferencePage(q, hash, 1);
   ReferencePage(q, hash, 4);
   ReferencePage(q, hash, 5);
+  ReferencePage(q, hash, 7);
+  ReferencePage(q, hash, 8);
+  ReferencePage(q, hash, 9);
 
-  printf("%d ", q->front->pageNumber);
-  printf("%d ", q->front->next->pageNumber);
-  printf("%d ", q->front->next->next->pageNumber);
-  printf("%d ", q->front->next->next->next->pageNumber);
+
+  // printf("%d ", q->front->pageNumber);
+  // printf("%d ", q->front->next->pageNumber);
+  // printf("%d ", q->front->next->next->pageNumber);
+  // printf("%d ", q->front->next->next->next->pageNumber);
+  display(q);
   return 0;
 }
