@@ -14,6 +14,8 @@ public:
   void addEdge(int v, int w);
 
   void DFS(int v);
+
+  void DFS();
 };
 
 Graph::Graph(int V)
@@ -47,6 +49,18 @@ void Graph::DFS(int v)
   DFSUtil(v, visited);
 }
 
+void Graph::DFS()
+{
+  bool *visited = new bool[V];
+  for (int i = 0; i < V; i++)
+    visited[i] = false;
+
+  for (int i = 0; i < V; i++)
+    if (visited[i] == false)
+      DFSUtil(i, visited);
+
+}
+
 int main() {
   Graph g(4);
   g.addEdge(0, 1);
@@ -59,5 +73,8 @@ int main() {
   cout << "Follwing is Depth First Traversal"
           " (starting from vertex 2) \n";
   g.DFS(2);
+
+  cout << endl;
+  g.DFS();
   return 0;
 }
