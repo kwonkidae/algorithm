@@ -1,1 +1,80 @@
-<mxfile host="app.diagrams.net" modified="2021-02-04T03:40:02.385Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" version="14.2.9" etag="UVg-0ZLTaL_G6L6lgTe1" type="github"><diagram id="LENubN0qim42VnyrbsYE">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-02-04T03:45:51.599Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="Pfuimtyfi8DpPlGV44yy" version="14.2.9" type="github">
+  <diagram id="LENubN0qim42VnyrbsYE" name="Page-1">
+    <mxGraphModel dx="1106" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IYR8KgIPnjlpIucz4oME-1" value="레이첼&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="140" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-2" value="기사발행&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="110" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-3" value="기사수정" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="140" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-4" value="기사 삭제" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="115" y="170" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IYR8KgIPnjlpIucz4oME-1" target="IYR8KgIPnjlpIucz4oME-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="310" as="sourcePoint" />
+            <mxPoint x="440" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-7" value="" style="endArrow=classic;html=1;" edge="1" parent="1" target="IYR8KgIPnjlpIucz4oME-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="150" as="sourcePoint" />
+            <mxPoint x="130" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IYR8KgIPnjlpIucz4oME-1" target="IYR8KgIPnjlpIucz4oME-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="310" as="sourcePoint" />
+            <mxPoint x="440" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-12" value="Redis&lt;br&gt;Role of Message Queue" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-13" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IYR8KgIPnjlpIucz4oME-2" target="IYR8KgIPnjlpIucz4oME-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="290" as="sourcePoint" />
+            <mxPoint x="440" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-14" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IYR8KgIPnjlpIucz4oME-3" target="IYR8KgIPnjlpIucz4oME-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="115" as="sourcePoint" />
+            <mxPoint x="230" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-15" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IYR8KgIPnjlpIucz4oME-4" target="IYR8KgIPnjlpIucz4oME-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="145" as="sourcePoint" />
+            <mxPoint x="220" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-16" value="Send Message" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="105" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-17" value="Naver News Transfer&lt;br&gt;Application" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IYR8KgIPnjlpIucz4oME-18" value="" style="curved=1;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="120" as="sourcePoint" />
+            <mxPoint x="400" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="120" />
+              <mxPoint x="440" y="170" />
+              <mxPoint x="410" y="190" />
+              <mxPoint x="370" y="160" />
+              <mxPoint x="390" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
