@@ -1,1 +1,271 @@
-<mxfile host="app.diagrams.net" modified="2021-02-17T23:58:07.582Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" version="14.2.9" etag="iqn6gHPKRmvlx-L_rGEw" type="github"><diagram id="ltXQfNqeA5rRu5LBdOoY">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-02-18T00:27:21.440Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="8rXnt-F5uwcCyj_kc78i" version="14.2.9" type="github">
+  <diagram id="ltXQfNqeA5rRu5LBdOoY" name="Page-1">
+    <mxGraphModel dx="1106" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="240" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-2" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-1" target="G_qYlDEHcYl-RIFXbpWC-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="300" as="sourcePoint" />
+            <mxPoint x="110" y="268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-3" value="Web" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-4" value="트레이닝 모델은 S3에 저장" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="80" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-6" value="Aws S3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="170" y="112" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-7" value="&lt;h1&gt;사용자&lt;/h1&gt;&lt;div&gt;사용자는 S3에 저장되어 있는 모델을&lt;/div&gt;&lt;div&gt;선택하여 파리미터값을 지정하여 트레이닝 시작&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="340" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-9" value="Message Queue" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="310" y="230" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-10" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-3" target="G_qYlDEHcYl-RIFXbpWC-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="480" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-11" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-3" target="G_qYlDEHcYl-RIFXbpWC-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="180" as="sourcePoint" />
+            <mxPoint x="170" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-12" value="모델과 파리미터 값을 메시지&lt;br&gt;메시지 큐에 전송" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="192" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-13" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-9" target="G_qYlDEHcYl-RIFXbpWC-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="370" as="sourcePoint" />
+            <mxPoint x="500" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-15" value="메시지가 입력되면 처리하는 APP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-16" value="AWS ECS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-17" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-15" target="G_qYlDEHcYl-RIFXbpWC-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="370" as="sourcePoint" />
+            <mxPoint x="650" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-18" value="메시지 큐에서 메시지를 전달 받아서 &lt;br&gt;모델과 파리미터 값을 기반으로 Docker&lt;br&gt;기반으로 모델링을 시작" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="182" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-19" value="EC2 or Fargage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-20" value="&lt;span&gt;EC2 or Fargage&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-21" value="&lt;span&gt;EC2 or Fargage&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-22" value="&lt;span&gt;EC2 or Fargage&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-23" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-16" target="G_qYlDEHcYl-RIFXbpWC-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="440" as="sourcePoint" />
+            <mxPoint x="530" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-24" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="G_qYlDEHcYl-RIFXbpWC-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="270" as="sourcePoint" />
+            <mxPoint x="750" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-25" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-16" target="G_qYlDEHcYl-RIFXbpWC-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="280" as="sourcePoint" />
+            <mxPoint x="790" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-26" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-16" target="G_qYlDEHcYl-RIFXbpWC-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="280" as="sourcePoint" />
+            <mxPoint x="790" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-27" value="ECS 오토스케일링을 이용하여 &lt;br&gt;사용성을&amp;nbsp;최적화함" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="312" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-28" value="AWS&lt;br&gt;ECR" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="210" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-29" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-19" target="G_qYlDEHcYl-RIFXbpWC-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="255" as="sourcePoint" />
+            <mxPoint x="1200" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-30" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-20" target="G_qYlDEHcYl-RIFXbpWC-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980" y="140" as="sourcePoint" />
+            <mxPoint x="1070" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-31" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-21" target="G_qYlDEHcYl-RIFXbpWC-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980" y="240" as="sourcePoint" />
+            <mxPoint x="1070" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-32" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-22" target="G_qYlDEHcYl-RIFXbpWC-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="980" y="330" as="sourcePoint" />
+            <mxPoint x="1070" y="282" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-33" value="모델링을 완료하면 해당&lt;br&gt;모델과 함께 도커이미지를&amp;nbsp;&lt;br&gt;생성하여 ECR에 저장 후&amp;nbsp;&lt;br&gt;해당 컨테이너 삭제" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="140" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-34" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="680" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-35" value="Web&lt;br&gt;이 경우에 Timeout을 길&lt;br&gt;게 가져가야 할 것 같음" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="680" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-36" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-34" target="G_qYlDEHcYl-RIFXbpWC-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="720" as="sourcePoint" />
+            <mxPoint x="150" y="709.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-37" value="&lt;h1&gt;사용자&lt;/h1&gt;&lt;div&gt;사용자는 트레이닝한 모델을 선택하여&lt;br&gt;Inference 시작 최초에는 서비스 Provisioning 때문에 시간이 다소 걸림&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="780" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-38" value="Message Queue" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="330" y="680" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-39" value="Inference 요청" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="650" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-40" value="Dynamo&lt;br&gt;db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="300" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-41" value="모델링한 이미지와 사용자간에&lt;br&gt;맵핑된 정보 및 다른 기타 데이터 저장&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="410" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-42" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-35" target="G_qYlDEHcYl-RIFXbpWC-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="830" as="sourcePoint" />
+            <mxPoint x="390" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-45" value="기존에 Provision 되어 있는지 검사 Provision이 안되어 있으면 Provisioning 진행하는 APP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="680" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-46" value="AWS&lt;br&gt;ECR" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="660" y="790" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-47" value="Dynamo&lt;br&gt;db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="680" y="600" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-48" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-38" target="G_qYlDEHcYl-RIFXbpWC-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="810" as="sourcePoint" />
+            <mxPoint x="380" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-49" value="AWS ECS&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="765" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-50" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-45" target="G_qYlDEHcYl-RIFXbpWC-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="640" as="sourcePoint" />
+            <mxPoint x="660" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-51" value="사용자가 선택한 모델과 맵핑된 ECR&lt;br&gt;정보를 가지고 온다." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="570" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-53" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-45" target="G_qYlDEHcYl-RIFXbpWC-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="730" as="sourcePoint" />
+            <mxPoint x="760" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-54" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="G_qYlDEHcYl-RIFXbpWC-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="720" as="sourcePoint" />
+            <mxPoint x="670" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-55" value="ECR에서 이미지를 선택하여 ECS에&lt;br&gt;해당 모델을 이용하여 Provision 요청" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="660" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-56" value="EC2 or Fargage" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-57" value="&lt;span&gt;EC2 or Fargage&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-58" value="&lt;span&gt;EC2 or Fargage&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-59" value="&lt;span&gt;EC2 or Fargage&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-60" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-49" target="G_qYlDEHcYl-RIFXbpWC-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="510" as="sourcePoint" />
+            <mxPoint x="920" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-61" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-49" target="G_qYlDEHcYl-RIFXbpWC-57">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="730" as="sourcePoint" />
+            <mxPoint x="980" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-62" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="730" as="sourcePoint" />
+            <mxPoint x="970" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-63" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-49" target="G_qYlDEHcYl-RIFXbpWC-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="930" as="sourcePoint" />
+            <mxPoint x="980" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-64" value="ECS 오토스케일링을 이용하여 &lt;br&gt;사용성을&amp;nbsp;최적화함" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="770" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-65" value="사용자가 로그아웃 하거나 Infercence&lt;br&gt;를 특정시간 동안 하지 않으면 해당&amp;nbsp;&lt;br&gt;인스턴스 삭제" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="725" y="820" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-66" value="추론이 끝나면&lt;br&gt;메시지 큐로 추론 값을 전송" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="750" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-69" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="G_qYlDEHcYl-RIFXbpWC-66" target="G_qYlDEHcYl-RIFXbpWC-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1180" y="850" as="sourcePoint" />
+            <mxPoint x="280" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1210" y="1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G_qYlDEHcYl-RIFXbpWC-70" value="웹 서버에서는 메시지 큐를 Polling하고&amp;nbsp;&lt;br&gt;있다가 결과 값이 입력되면 사용자에게&amp;nbsp;&lt;br&gt;보여 줌&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="775" width="200" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
